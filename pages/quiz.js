@@ -13,7 +13,7 @@ export default function Quiz({ quizes }) {
   const [complete, setComplete] = useState(1);
   const sample = quizes;
 
-  const changeSample = (e) => {
+  const changeSample = (index) => {
     var trueI = 0;
     cAns.map((cAns, index) => {
       if (cAns == "true") {
@@ -21,7 +21,7 @@ export default function Quiz({ quizes }) {
       }
     });
 
-    if (e.target.value == trueI) {
+    if (index == trueI) {
       console.log("true");
       point = point + 100;
       setPoint(point);
@@ -100,7 +100,7 @@ export default function Quiz({ quizes }) {
                         <button
                           className="w-full p-5"
                           value={index}
-                          onClick={(e) => changeSample(e)}
+                          onClick={() => changeSample(index)}
                         >
                           {a}
                         </button>
