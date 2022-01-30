@@ -113,9 +113,9 @@ export default function Home({ quizes }) {
       <div className="grid justify-items-center text-white">
         Developed by Ank Maw Khon
       <div className="grid gap-5 mt-3 grid-cols-3 text-2xl">
-          <a target="_blank" href="https://github.com/Nick4833"><AiFillGithub className="cursor-pointer hover:text-green-400" /></a>
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=1000773736633163"><BsFacebook className="cursor-pointer hover:text-green-400"/></a>
-          <a target="_blank" href="https://www.linkedin.com/in/ank-maw-khon-698309180/"><AiFillLinkedin className="cursor-pointer hover:text-green-400"/></a>
+          <a target="_blank" rel="noreferrer" href="https://github.com/Nick4833"><AiFillGithub className="cursor-pointer hover:text-green-400" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=1000773736633163"><BsFacebook className="cursor-pointer hover:text-green-400"/></a>
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ank-maw-khon-698309180/"><AiFillLinkedin className="cursor-pointer hover:text-green-400"/></a>
       </div>
       </div>
     </div>
