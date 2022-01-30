@@ -120,7 +120,7 @@ export default function Quiz({ quizes }) {
           <div className="grid justify-items-center gap-10">
           <h3 className="text-2xl font-bold">Your High Score</h3>
           <p className="text-9xl font-bold text-[#25c887]">{point}</p>
-          {point < 1500 ? ('You need more pratice 😞 Try again?') : ("Wow, you're a Pro at this 😊")}
+          {point < ((quizes.length - 3) * 100) ? ('You need more pratice 😞 Try again?') : ("Wow, you're a Pro at this 😊")}
           <div className="grid grid-cols-2 gap-5">
           <button className="p-3 bg-[#25c887] rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-102 duration-300" onClick={() => retryQuiz()}>Answer Again</button>
           <Link href="/"><button className="p-3 bg-rose-500 rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-102 duration-300">Back to Menu</button></Link>
