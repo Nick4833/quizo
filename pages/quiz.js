@@ -95,7 +95,7 @@ export default function Quiz({ quizes }) {
                     {a !== null ? (
                       <div
                         key={index}
-                        className="drop-shadow-xl bg-gradient-to-r from-sky-400 to-blue-500 focus:from-sky-400 focus:to-blue-500 hover:from-green-500 hover:to-green-700 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-102 duration-300 rounded-xl text-white"
+                        className="drop-shadow-xl bg-gradient-to-r from-sky-400 to-blue-500  lg:hover:from-green-500 lg:hover:to-green-700 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-102 duration-300 rounded-xl text-white"
                       >
                         <button
                           className="w-full p-5"
